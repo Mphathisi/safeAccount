@@ -1,0 +1,63 @@
+<ion-content>
+
+
+  <div class="banner">
+    <div class="create-message">
+        
+         <ion-text color="dark">
+            <h3 class="text-center">Login</h3>
+          </ion-text>
+    </div>
+  </div>
+
+
+  <div class="form">
+
+    <div class="container">
+      <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">Email Adrress</ion-label>
+        <ion-input type="email" [(ngModel)] = "email" placeholder="mphathisi@gmail.com"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type= "password" [(ngModel)] = "password"  required placeholder="**********"></ion-input>
+      </ion-item>
+        
+     </ion-list>
+      <div class="button">
+             <ion-button expand="block" (click) = "login()" >Login</ion-button>
+      </div>
+
+      <div class="forget">
+         <div class="text-center">
+           <ion-note>Forget password?</ion-note>
+         </div>
+      </div>
+
+
+
+
+ <ion-footer class="ion-no-border">
+   <ion-toolbar>
+     <div class="footer">
+         <div class="text-center">
+           <ion-note>Don't have an Account</ion-note>
+         </div>
+      <div class="text-center">
+          <ion-note color="primary" routerLink="/register">Create Account</ion-note>
+      </div>
+     </div>
+  </ion-toolbar>
+</ion-footer>
+
+
+    </div><!--container class ends here-->
+
+    
+  </div><!--end form-->
+
+</ion-content>
+

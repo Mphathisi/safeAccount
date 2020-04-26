@@ -1,0 +1,86 @@
+<ion-header>
+   <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button routerLink="/home/prepaid">
+            <ion-icon name="return-up-back-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button>
+            B John
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Safe Account</ion-title>
+      </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+          
+  <ion-card class="banner">
+        <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>Prepaid</div>
+          </ion-col>
+          <ion-col>
+            <div>Safe Account</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+      <!--send grid-->
+
+       <ion-grid>
+        <ion-row>
+          <ion-col class="chip-img">
+            <img src="../../../assets/images/CC_chip.png">
+          </ion-col>
+          <ion-col>
+             <ion-button fill="outline" style="float: right; color: white">R100.00</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+       <h5 class="text-center" style="color:#beeb09;">4894 3334 4223</h5>
+       <h5 class="text-center">John Doe</h5>
+    </ion-card>
+
+
+
+  <div class="container padding-b">
+
+     <div class="container">
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+              <label for="">Electricity Provider:</label>
+              <input type="text" class="form-control" required="true"  placeholder="Eskom">
+          </div>
+      </div>
+
+
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+              <label for="">Meter Number:</label>
+              <input type="number" class="form-control" required="true"  placeholder="55 11 2375 085">
+          </div>
+      </div>
+
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+              <label for="">Amount:</label>
+              <input type="number" class="form-control" required="true"  placeholder="R00 .00">
+          </div>
+      </div>
+
+
+
+      <div class="form-group row">
+          <div class="col-sm-10">
+            <button class="btn btn-success btn-block">Proceed</button>
+          </div> 
+      </div>
+     </div>
+
+    
+</div>
+</ion-content>

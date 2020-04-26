@@ -1,0 +1,173 @@
+ <ion-app>
+    <ion-menu side="start" content-id="main-content">
+      <ion-header>
+        <ion-toolbar translucent>
+          <ion-title>Boney John</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+           
+        <ion-list>
+          <ion-item>
+         
+            <ion-icon name="magnet-outline" slot="start" color="primary"></ion-icon>
+            <ion-label (click)="presentAlertPrompt()">Link  Account</ion-label>
+          </ion-item>
+          <ion-item>
+             <ion-icon name="card" slot="start"color="medium"></ion-icon>
+            <ion-label>My Account</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="server" slot="start" color="danger"></ion-icon>
+            <ion-label>Transction History</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="notifications" slot="start" color="dark"></ion-icon>
+            <ion-label>Notifications</ion-label>
+          </ion-item>
+        </ion-list>
+
+         <ion-list id="labels-list">
+          <ion-list-header>More</ion-list-header>
+          <ion-item>
+            <ion-icon name="finger-print" slot="start"></ion-icon>
+            <ion-label>Biometric sign in</ion-label>
+            <ion-toggle color="secondary" slot="end"></ion-toggle>
+          </ion-item>
+           <ion-item (click)="logout()" routerLink="/login">
+            <ion-icon name="log-in" slot="start"color="success"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+             <ion-buttons slot="end">
+          <ion-button>
+            B John
+          </ion-button>
+        </ion-buttons>
+        <h4 class="text-center">Safe Account</h4>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+          
+  <ion-card class="banner">
+        <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>Check Account</div>
+          </ion-col>
+          <ion-col>
+            <div>Safe Account</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+      <!--send grid-->
+
+       <ion-grid>
+        <ion-row>
+          <ion-col class="chip-img">
+            <img src="../../../assets/images/CC_chip.png">
+          </ion-col>
+          <ion-col>
+             <ion-button fill="outline" style="float: right; color: white">R453,34.00</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+       <h5 class="text-center" style="color:#beeb09;">4894 3334 4223</h5>
+       <h5 class="text-center">John Doe</h5>
+    </ion-card>
+
+
+
+
+
+ <!--navigation-->
+ <ion-card>
+    <ion-item routerLink = "/home/general">
+    <i class="fab fa-cc-visa" slot="start"></i>
+    General 
+  </ion-item>
+</ion-card>
+<ion-card >
+    <ion-item routerLink = "/home/groceries">
+    <i class="fas fa-cart-plus" slot="start"></i>
+    Groceries
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink = "/home/transport">
+     <i class="fas fa-gas-pump" slot="start"></i>
+    <ion-label>Transport</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink ="/home/clothing">
+    <i class="fas fa-tshirt" slot="start"></i>
+    <ion-label>Clothing</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink = "/home/education">
+     <i class="fas fa-graduation-cap" slot="start"></i>
+    <ion-label>Educational</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink = "/home/prepaid">
+    <i class="fa fa-wifi" slot="start"></i>
+    <ion-label>Prepaid</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink = "/home/self">
+    <i class="fas fa-medkit" slot="start"></i>
+    <ion-label>Self Care</ion-label>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item routerLink = "/home/save">
+   <i class="fas fa-wallet" slot= "start"></i>
+    <ion-label>Save and Invest</ion-label>
+  </ion-item>
+</ion-card>
+
+
+<!--<ion-list>
+  <ion-item *ngFor = "let user of users">
+    <ion-item>
+      <ion-label>
+        <h2>{{user.data().Name}}</h2>
+        <h2>{{user.data().Surname}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-item>
+ </ion-list>-->
+
+
+
+
+
+
+ 
+
+      </ion-content>
+    </div>
+  </ion-app>
+
+
+
+

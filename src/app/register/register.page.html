@@ -1,0 +1,66 @@
+<ion-content>
+
+
+  <div class="banner">
+    <div class="create-message">
+        
+         <ion-text color="dark">
+            <h3 class="text-center">Create Account</h3>
+          </ion-text>
+    </div>
+  </div>
+
+
+  <div class="form">
+
+    <div class="container">
+      <ion-list>
+
+      <ion-item>
+        <ion-label position="stacked">First Name</ion-label>
+        <ion-input type= "text" placeholder="Mphathisi" [(ngModel)] = "name"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Surname</ion-label>
+        <ion-input type= "text" placeholder="Dayimani" [(ngModel)] = "surname"  required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="stacked">Email Adrress</ion-label>
+        <ion-input type="email" [(ngModel)] = "email" placeholder="mphathisi@gmail.com"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type= "password" [(ngModel)] = "password"  required placeholder="**********"></ion-input>
+      </ion-item>
+        
+     </ion-list>
+
+      <div class="button">
+             <ion-button expand="block" (click) = "register()">Create Account</ion-button>
+      </div>
+
+     <ion-footer class="ion-no-border">
+  <ion-toolbar>
+     <div class="footer">
+         <div class="text-center">
+           <ion-note>Already have an account</ion-note>
+         </div>
+      <div class="text-center">
+          <ion-note color="primary" routerLink="/login">Login</ion-note>
+      </div>
+     </div>
+  </ion-toolbar>
+</ion-footer>
+
+
+    </div><!--container class ends here-->
+
+    
+  </div><!--end form-->
+
+</ion-content>
+
